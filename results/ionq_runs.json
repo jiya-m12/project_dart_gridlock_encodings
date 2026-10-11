@@ -204,5 +204,70 @@
    "Second A19 run: all four sampled P(opt) within ~1.3 standard errors of the exact noiseless values, so the noise model costs little at p = 1.",
    "E1 > E2 at p = 1 on A19 comes from the optimiser (E2's best p=1 point, 0.154, is at beta > 0), not from the encoding."
   ]
+ },
+ {
+  "date": "2026-10-12",
+  "where": "Qollab, IonQ Forte 1 quantum computer (real hardware, paid with Qollab credits); backend printed as ionq_qpu.forte-1",
+  "code": "main.py, mode=compare, instance=A19, p=1, shots=200, objective=CVaR_0.25, alpha=0.25, tuning=neighbour, max_qubits=25",
+  "packed_circuit": {
+   "blocks": [
+    "E1",
+    "E2",
+    "E3",
+    "E4"
+   ],
+   "qubits": 25,
+   "jobs": 1,
+   "note": "E0 skipped (22 qubits)"
+  },
+  "results": {
+   "E1": {
+    "p_opt_sampled": 0.085,
+    "optimum_hits": 17,
+    "p_opt_exact": 0.097,
+    "p_feasible_sampled": 0.19,
+    "p_feasible_exact": 0.227
+   },
+   "E2": {
+    "p_opt_sampled": 0.065,
+    "optimum_hits": 13,
+    "p_opt_exact": 0.087,
+    "p_feasible_sampled": 0.14,
+    "p_feasible_exact": 0.175
+   },
+   "E3": {
+    "p_opt_sampled": 0.01,
+    "optimum_hits": 2,
+    "p_opt_exact": 0.037,
+    "p_feasible_sampled": 0.01,
+    "p_feasible_exact": 0.062
+   },
+   "E4": {
+    "p_opt_sampled": 0.005,
+    "optimum_hits": 1,
+    "p_opt_exact": 0.035,
+    "p_feasible_sampled": 0.015,
+    "p_feasible_exact": 0.071
+   }
+  },
+  "shots": 200,
+  "uniform_random": {
+   "p_opt": 0.0156,
+   "p_feasible": 0.0312,
+   "expected_optimum_hits": 3.1
+  },
+  "predicted_execution_ms": 15388,
+  "circuit_execution_ms": 19404,
+  "wall_time_s": 215.4,
+  "credits_used": 25.79,
+  "credits_note": "Qollab balance 100.00 before the run, 74.21 after",
+  "caveats": [
+   "One run, 200 shots, one device calibration.",
+   "E1 (17 hits) and E2 (13 hits) are far above uniform random guessing (3.1 expected; one-sided binomial p = 2e-8 and 2e-5) and within 1.1 standard errors of their noiseless values.",
+   "E3 (2 hits) and E4 (1 hit) are indistinguishable from random guessing, and below their noiseless values (one-sided binomial p = 0.02 and 0.007). The two IonQ noise-model runs of the same setting did not show this drop.",
+   "The four blocks sit on different physical qubits of the same chip, so qubit quality and crosstalk are confounded with the encoding.",
+   "At p = 1 the optimiser misses E2's best angles on A19 (0.154 exists at beta > 0), so E1 > E2 here is not an encoding ranking.",
+   "Angles were optimised on the noiseless statevector in the browser, then sampled once on the QPU."
+  ]
  }
 ]

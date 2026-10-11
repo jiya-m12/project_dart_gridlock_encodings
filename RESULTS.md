@@ -295,7 +295,7 @@ Good things to try:
   - Four encodings run in one 25-qubit circuit, which follows IonQ's one-job-one-circuit rule.
   - On A19, E1 needs a slack qubit and E3's encoded minimum is not the optimum, so all four behave differently.
   - The run log is in `results/ionq_runs.json`.
-  - Read single runs with care. At p = 1 our optimiser misses E2's best angles on A19: it finds P(opt) 0.087, while 0.154 exists at β > 0. A one-run ranking under noise mostly reflects the optimiser and shot noise, not the encoding.
+  - Read single runs with care. At p = 1 our optimiser misses E2's best angles on A19: it finds P(opt) 0.087, while 0.154 exists at β > 0. A one-run ranking under noise mostly reflects the optimiser and shot noise, not the encoding. One-sided binomial tests against random guessing: p = 2e-8 (E1), 2e-5 (E2). E3 and E4 are below their noiseless values (p = 0.02, 0.007).
 
 ## Reproduce everything
 Python 3.11+, `pip install numpy scipy qiskit` (Qiskit 2.x, tested with 2.5.2; plus matplotlib for the figures). From the package root:
