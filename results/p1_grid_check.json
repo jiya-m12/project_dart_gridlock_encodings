@@ -1,0 +1,25 @@
+{
+ "grid": "64 x 64, gamma in [0.01, pi], beta in [-pi/2, pi/2)",
+ "objective": "cvar",
+ "alpha": 0.25,
+ "rule": "neighbour",
+ "set": "bench",
+ "E1": {
+  "n": 40,
+  "grid_best_beta_negative": 34,
+  "shipped_worse_than_grid_by_0.1pct": 3,
+  "largest_relative_shortfall": 0.08934451966143404
+ },
+ "E2": {
+  "n": 40,
+  "grid_best_beta_negative": 34,
+  "shipped_worse_than_grid_by_0.1pct": 10,
+  "largest_relative_shortfall": 0.30680505558993676
+ },
+ "E4": {
+  "n": 40,
+  "grid_best_beta_negative": 36,
+  "shipped_worse_than_grid_by_0.1pct": 8,
+  "largest_relative_shortfall": 0.022299931898344064
+ }
+}

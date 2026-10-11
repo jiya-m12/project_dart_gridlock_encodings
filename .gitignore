@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+results/old_run/
+results/*_log.txt

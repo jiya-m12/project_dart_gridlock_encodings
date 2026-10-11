@@ -1,0 +1,2 @@
+Derived from IBM 'Transactions for Anti Money Laundering' HI-Small (Altman et al., NeurIPS 2023 Datasets and Benchmarks; Kaggle). Licensed under CDLA-Sharing-1.0 (https://cdla.dev/sharing-1-0/). MODIFIED: rows filtered (USD Wire, inter-bank), grouped into settlement batches, banks renumbered, amounts in cents, liquidity added by a stated rule. Synthetic data; not real or RTGS payments.
+Applies to data/aml_pool.json and data/aml_instances.json. Code in this repository is MIT.

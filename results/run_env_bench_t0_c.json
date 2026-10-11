@@ -1,0 +1,16 @@
+{
+ "protocol": "v7: beta starts < 0, COBYLA 1000/start",
+ "sets": [
+  "bench",
+  "t0",
+  "c"
+ ],
+ "jobs": 680,
+ "workers": 12,
+ "python": "3.14.2",
+ "numpy": "2.5.3",
+ "scipy": "1.18.1",
+ "machine": "Windows-11-10.0.26200-SP0",
+ "cpu_count": 12,
+ "started": "2026-10-10 20:59:36 India Standard Time"
+}

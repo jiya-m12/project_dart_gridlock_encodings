@@ -1,0 +1,138 @@
+{
+ "licence": "Derived from IBM 'Transactions for Anti Money Laundering' HI-Small (Altman et al., NeurIPS 2023 Datasets and Benchmarks; Kaggle). Licensed under CDLA-Sharing-1.0 (https://cdla.dev/sharing-1-0/). MODIFIED: rows filtered (USD Wire, inter-bank), grouped into settlement batches, banks renumbered, amounts in cents, liquidity added by a stated rule. Synthetic data; not real or RTGS payments.",
+ "provenance": {
+  "source_csv_sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040",
+  "filtered_gz_sha256": "b91146e919c5cf7149e8c167803bed4f73b5f5d81fce2e4d05d7edd559d788f4",
+  "generator_sha256": "facd9b36d565fb3c7465ad67a92fcbf9866d2ca609c4bb0fe0fac215ed3d3d98",
+  "settle_aml_sha256": "b95f90cd5aa27fa0a543bce4b83e81e979b5f7c28ee36ee2c5826f419221bee4"
+ },
+ "rule": {
+  "format": "Wire",
+  "currency": "US Dollar (both sides)",
+  "inter_bank_only": true,
+  "grouping": "traffic",
+  "group_size": 5,
+  "epoch_hours": 12,
+  "n_min": 6,
+  "n_max": 9,
+  "max_degree": 5,
+  "f_grid": [
+   0.2,
+   0.3,
+   0.4
+  ],
+  "liquidity": "C_u = ceil(f * outgoing cents of u)",
+  "seed": 20261010,
+  "hard_filter": "not trivially all-settle and opt > value-ordered greedy"
+ },
+ "counts": {
+  "filtered_rows_in_gz": 264311,
+  "wire_rows": 64244,
+  "rows_in_batches": 4181,
+  "rows_cross_group": 55429,
+  "batches": 548,
+  "discarded_short": 1166,
+  "rows_in_short": 4634,
+  "pool": 548,
+  "hard": 22,
+  "hard_beats_deletion": 5,
+  "hard_beats_bs_fifo": 10,
+  "hard_beats_all_heuristics": 2,
+  "pool_f": {
+   "0.2": 191,
+   "0.4": 171,
+   "0.3": 186
+  },
+  "hard_f": {
+   "0.3": 8,
+   "0.2": 7,
+   "0.4": 7
+  }
+ },
+ "liquidity_sweep_all_batches": {
+  "0.1": {
+   "batches": 548,
+   "trivial_all_settle": 0,
+   "hard": 19,
+   "beats_fifo": 34,
+   "beats_deletion": 8,
+   "beats_bs_fifo": 25,
+   "beats_all_heuristics": 1
+  },
+  "0.2": {
+   "batches": 548,
+   "trivial_all_settle": 1,
+   "hard": 26,
+   "beats_fifo": 37,
+   "beats_deletion": 11,
+   "beats_bs_fifo": 29,
+   "beats_all_heuristics": 6
+  },
+  "0.3": {
+   "batches": 548,
+   "trivial_all_settle": 1,
+   "hard": 28,
+   "beats_fifo": 43,
+   "beats_deletion": 12,
+   "beats_bs_fifo": 34,
+   "beats_all_heuristics": 4
+  },
+  "0.4": {
+   "batches": 548,
+   "trivial_all_settle": 1,
+   "hard": 24,
+   "beats_fifo": 37,
+   "beats_deletion": 5,
+   "beats_bs_fifo": 20,
+   "beats_all_heuristics": 2
+  }
+ },
+ "quantisation_study_vs_exact_cents": {
+  "10": {
+   "optimum_preserved": 65,
+   "hard_after_quantising": 72,
+   "optimum_preserved_on_hard": 5
+  },
+  "100": {
+   "optimum_preserved": 170,
+   "hard_after_quantising": 65,
+   "optimum_preserved_on_hard": 10
+  },
+  "1000": {
+   "optimum_preserved": 302,
+   "hard_after_quantising": 39,
+   "optimum_preserved_on_hard": 15
+  },
+  "10000": {
+   "optimum_preserved": 423,
+   "hard_after_quantising": 29,
+   "optimum_preserved_on_hard": 16
+  },
+  "1000000": {
+   "optimum_preserved": 540,
+   "hard_after_quantising": 24,
+   "optimum_preserved_on_hard": 22
+  }
+ },
+ "statistics": {
+  "wire_amount_dollars_mean": 353600.45421159954,
+  "wire_amount_dollars_median": 519.635,
+  "mean_over_median": 680.4785170583189,
+  "batch_max_over_min_quantiles": {
+   "0.1": 519.4194703334209,
+   "0.25": 2815.238383250428,
+   "0.5": 21477.021571772253,
+   "0.75": 161812.36108119023,
+   "0.9": 1102970.4819244551
+  },
+  "batch_reciprocity_mean": 0.23024272969528445,
+  "has_directed_cycle": 404,
+  "n_9": 159,
+  "banks_5": 517,
+  "n_6": 117,
+  "banks_4": 30,
+  "n_7": 128,
+  "n_8": 144,
+  "banks_3": 1
+ }
+}

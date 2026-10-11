@@ -1,0 +1,71 @@
+{
+ "entries": 151,
+ "k_counts": {
+  "0": 70,
+  "1": 69,
+  "2": 12
+ },
+ "problems": [],
+ "k2_checks": [
+  {
+   "pattern": "5:11111111111111110100111111011111",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11111111111111110101111101011101",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11001111111111111101111111111111",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11010101010001001111111111011101",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11010101111111111111111111111111",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:10111111001011111111111111111111",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11111111110111111101110101001101",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11111101111111110100010011010100",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11011111010011011101111100001101",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:10111111111111111111111111111111",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11111111010111011101111101010101",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  },
+  {
+   "pattern": "5:11111111111111110111111111111111",
+   "k1_possible_bound64": false,
+   "k1_possible_bound256": false
+  }
+ ]
+}

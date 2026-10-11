@@ -1,0 +1,200 @@
+[
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.1,
+  "rule": "local",
+  "n": 60,
+  "E0": 1,
+  "E1": 11,
+  "E2": 11,
+  "E4": 1
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.1,
+  "rule": "neighbour",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.1,
+  "rule": "global",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.2,
+  "rule": "local",
+  "n": 60,
+  "E0": 3,
+  "E1": 8,
+  "E2": 8,
+  "E4": 3
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.2,
+  "rule": "neighbour",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.2,
+  "rule": "global",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.3,
+  "rule": "local",
+  "n": 60,
+  "E0": 1,
+  "E1": 1,
+  "E2": 1,
+  "E4": 1
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.3,
+  "rule": "neighbour",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 4,
+  "payments": 6,
+  "f_liq": 0.3,
+  "rule": "global",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.1,
+  "rule": "local",
+  "n": 60,
+  "E0": 3,
+  "E1": 27,
+  "E2": 29,
+  "E4": 3
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.1,
+  "rule": "neighbour",
+  "n": 60,
+  "E0": 0,
+  "E1": 1,
+  "E2": 1,
+  "E4": 0
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.1,
+  "rule": "global",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.2,
+  "rule": "local",
+  "n": 60,
+  "E0": 5,
+  "E1": 27,
+  "E2": 27,
+  "E4": 5
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.2,
+  "rule": "neighbour",
+  "n": 60,
+  "E0": 0,
+  "E1": 1,
+  "E2": 1,
+  "E4": 0
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.2,
+  "rule": "global",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.3,
+  "rule": "local",
+  "n": 60,
+  "E0": 5,
+  "E1": 18,
+  "E2": 18,
+  "E4": 5
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.3,
+  "rule": "neighbour",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ },
+ {
+  "banks": 6,
+  "payments": 9,
+  "f_liq": 0.3,
+  "rule": "global",
+  "n": 60,
+  "E0": 0,
+  "E1": 0,
+  "E2": 0,
+  "E4": 0
+ }
+]
