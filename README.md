@@ -1,7 +1,7 @@
 # Gridlock Encodings: how constraint encoding changes QAOA on interbank payment gridlock
 
 **Theme:** Quantum Impact · **Team:** Random Qubit (solo: Jiya Maurya) · **Licence:** MIT (code), CDLA-Sharing-1.0 (derived AML data)
-**Demo video (3 min):** VIDEO_LINK · **Code mirror and full documentation:** [GitHub](https://github.com/jiya-m12/project_dart_gridlock_encodings) (same files as this project) · **Prior work:** [my earlier notebook](https://github.com/jiya-m12/qubo-interbank-settlement), disclosed below
+**Demo video (3 min):** VIDEO_LINK · **https://youtu.be/lA4ikg_dDys ** [GitHub](https://github.com/jiya-m12/project_dart_gridlock_encodings) (same files as this project) · **Prior work:** [my earlier notebook](https://github.com/jiya-m12/qubo-interbank-settlement), disclosed below
 
 This effort is supported by Qollab & IonQ.
 
